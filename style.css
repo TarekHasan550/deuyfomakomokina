@@ -1,0 +1,119 @@
+.borderless-button {
+  background-color: #000000; 
+  color: white; 
+  border: none;
+  margin-inline-end: 5px;
+  font-size: medium;
+}
+.borderless-button:active{
+    transform: scale(1.1);
+}
+.borderless-button:hover {
+  color: rgb(0, 255, 255);  
+}
+
+.m{
+    text-align: center;
+    margin: 20px 100px 0px;
+}
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+    position: relative;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #aeff00;
+    margin: 15px 0px 130px;
+    padding: 0px 25px 10px;
+}
+
+.quote{
+    background: linear-gradient(90deg, rgb(0, 255, 255), #aeff00);
+    border-radius: 6px;
+    height: 40px;
+    width: fit-content;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+.quote:active{
+    transform: scale(0.90);
+}
+
+.quote:hover{
+    color: white;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.boxView{
+    height: 320px;
+    width: 700px;
+    /* box-sizing: border-box; */
+    border-radius: 15px;
+    background-color: rgb(250, 218, 178);
+    padding: 5px 50px;
+    margin-top: 320px;
+    color: #000000;
+    font-size: larger;
+    position: relative;
+    z-index: 1;
+}
+.overlap_imgl{
+    float: left;
+    margin: 20px 80px;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.overlap_imgr{
+    right: 0%;
+    margin: 20px 20px;
+    margin-right: -20px;
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+ .btn{
+    font-size: large;
+    font-weight: 500;
+    box-shadow: 3px 3px 0px rgb(0, 0, 0);
+    margin: 0px 10x;
+    position: relative;
+    top: -10px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 8px;
+    margin-right: 30px;
+ }
+ .btn:hover{
+    color: rgb(0, 255, 255);
+ }
+ .btn:active {
+    background-color: rgb(0, 255, 255); 
+    transform: scale(0.9); 
+    color: transparent;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0); 
+  }
+.btn:active::before {
+    content: "Plz Release!";
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+  }
+a{
+    text-decoration: none;
+    color: inherit;
+}
