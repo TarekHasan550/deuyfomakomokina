@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rope Shape</title>
+  <style>
+    .rope {
+      width: 200px;
+      height: 20px;
+      background: linear-gradient(135deg, #d2a679 25%, #8c6239 25%, #8c6239 50%, #d2a679 50%, #d2a679 75%, #8c6239 75%);
+      background-size: 30px 30px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="rope"></div>
+</body>
+</html>
