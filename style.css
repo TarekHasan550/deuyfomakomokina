@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@ body {
     background-color: #0a0d0c;
     color: white;
     margin: 2% 3%;
+    font-family: "Space Grotesk", sans-serif;
 }
 header {
     position: sticky;
@@ -64,7 +66,7 @@ header {
     font-weight: 500;
 }
 .hero {
-    margin: 10% 0 0;
+    margin: 5% 0 0;
     text-align: center;
 }
 .hero_text {
@@ -74,7 +76,8 @@ header {
     line-height: 150%;
 }
 .hero h3 {
-    font-size: 36px;
+    font-size: 2.4vw;
+    font-weight: 100;
     margin: 5% 0;
 }
 .hero .auto_type {
@@ -91,7 +94,7 @@ header {
         width: 0;
     }
     100% {
-        width: 16ch;
+        width: 13ch;
     }
 }
 @keyframes blink {
@@ -127,7 +130,8 @@ header {
 }
 .cardview1 h1 {
     justify-self: center;
-    font-size: 4vw;
+    font-size: 3.6vw;
+    font-weight: 500;
     border-bottom: 2px solid #00ffe5;
     width: max-content;
     margin: 0 0 5%;
@@ -143,7 +147,7 @@ header {
     border-radius: 10px;
     padding: 5%;
     padding: 0 10%;
-    height: 32vw;
+    height: 34vw;
     position: relative;
 }
 .card .card_text {
@@ -152,21 +156,21 @@ header {
     bottom: 5%;
     left: 0%;
     right: 0%;
-    padding: 0 10%;
+    padding: 0 8%;
 }
 .card img {
     width: 7vw;
-    margin: 5% 0;
+    margin: 5% 0 16%;
 }
 .card h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 400;
     margin-top: 3%;
 }
 .card p {
-    font-size: 1.5vw;
+    font-size: 1.35vw;
     font-weight: 400;
-    margin: 10% 0;
+    margin: 5% 0 15%;
 }
 /* card view section 1 finish  */
 
@@ -176,15 +180,16 @@ header {
 }
 .cardview2 h1 {
     justify-self: center;
-    font-size: 4vw;
-    border-bottom: 2px solid #ffcc00;
+    font-size: 3.6vw;
+    font-weight: 500;
+    border-bottom: 2px solid #00ffe5;
     width: max-content;
     margin: 0 0 4%;
 }
 .cardview2 h4 {
-    font-size: 2.2vw;
-    font-weight: 300;
-    margin: 0 0 3%;
+    font-size: 1.95vw;
+    font-weight: 400;
+    margin: 0 1% 4%;
 }
 .card_container2 {
     display: grid;
@@ -206,21 +211,21 @@ header {
     bottom: 5%;
     left: 0%;
     right: 0%;
-    padding: 0 10%;
+    padding: 0 8%;
 }
 .card2 img {
     width: 7vw;
     margin: 5% 0;
 }
 .card2 h3 {
-    font-size: 2.5vw;
-    font-weight: 400;
+    font-size: 2vw;
+    font-weight: 500;
     margin-top: 3%;
 }
 .card2 p {
-    font-size: 1.5vw;
+    font-size: 1.37vw;
     font-weight: 400;
-    margin: 10% 0;
+    margin: 4% 0 8%;
 }
 /* card view section 2 finish  */
 
@@ -231,13 +236,13 @@ header {
 }
 .cardview3 h1 {
     justify-self: center;
-    font-size: 4vw;
+    font-size: 3.6vw;
     border-bottom: 2px solid #00ffe5;
     width: max-content;
     margin: 5% 0;
 }
 .cardview3 h4 {
-    font-size: 2.3vw;
+    font-size: 1.95vw;
     font-weight: 400;
     margin-bottom: 3%;
 }
@@ -250,7 +255,7 @@ header {
     border: 2px solid transparent;
     background: linear-gradient(#0a0d0c, #0a0d0c) padding-box, linear-gradient(to top, #00ffe5, #ffcc00) border-box;
     border-radius: 10px;
-    padding: 4% 2% 6%;
+    padding: 4% 2% 7%;
 }
 .card3 img {
     width: 100%;
@@ -258,13 +263,13 @@ header {
     margin-bottom: 10%;
 }
 .card3 h3 {
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: 400;
     margin-bottom: 2%;
     font-weight: 400;
 }
 .card3 p {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: 400;
     padding: 0 8%;
 }
@@ -276,11 +281,12 @@ header {
     margin-bottom: 5%;
 }
 .cardview4 h1 {
-    font-size: 4vw;
+    font-size: 3.6vw;
+    font-weight: 500;
     margin-bottom: 5%;
 }
 .cardview4 h3 {
-    font-size: 2.3vw;
+    font-size: 1.9vw;
     font-weight: 400;
     margin-bottom: 3%;
 }
@@ -299,7 +305,7 @@ header {
 }
 .card_content {
     text-align: left;
-    padding: 6% 4%;
+    padding: 6% 5%;
     visibility: hidden;
 }
 #rahat {
@@ -351,7 +357,8 @@ header {
     margin: 0% 12% 15%;
 }
 .faqview h1{
-    font-size: 4vw;
+    font-size: 3.6vw;
+    font-weight: 500;
     margin-bottom: 2%;
 }
 .faq {
@@ -395,7 +402,8 @@ footer {
     background-color: #1f1f1f;
     color: white;
     font-size: 1.3vw;
-    padding: 1% 2%;
+    padding: 2% 3%;
+    margin-bottom: 8%;
 }
 #f1 {
     align-self: center;
@@ -403,11 +411,15 @@ footer {
 #f1 img {
     width: 30%;
 }
+#f1 h3 {
+    font-size: 1.2vw;
+    font-weight: 500;
+}
 #f2 a, #f3 a{
     text-decoration: none;
     color: #0a0d0c;
     font-size: 1.2vw;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 10%;
     width: fit-content;
 }
@@ -417,14 +429,15 @@ footer {
 }
 #f4 h2 {
     font-size: 2vw;
-    margin-bottom: 20%;
+    font-weight: 400;
+    margin-bottom: 17%;
     font-weight: 600;
 }
 #f4 {
     padding-left: 15%;
 }
 #f4 h5 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     line-height: 170%;
     font-weight: 500;
 }
@@ -490,7 +503,7 @@ footer {
     text-shadow: 0 0 4px #00ffe5;
 }
 #f2 a:hover, #f3 a:hover {
-    text-shadow: 0 0 5px #00ffe5;
+    text-shadow: 0 0 3px #00ffe5;
     border-bottom: 2px solid #00ffe5;
 }
 #f5 img:hover {
