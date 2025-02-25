@@ -1,0 +1,153 @@
+.masterPiece {
+    text-align: center;
+    margin: 0 0 35%;
+}
+
+.masterPiece h1 {
+    font-size: var(--sectionHeadingFontSize);
+    margin: 0 0 4%;
+}
+
+.masterPiece #h,
+.masterPiece h1 img {
+    display: none;
+}
+
+.masterCardContainer {
+    display: flex;
+    height: fit-content;
+    margin: clamp(80px, 10%, 110px) 4vw 0;
+}
+
+.masterCard {
+    width: calc(100%/4);
+    border: 1px solid var(--brandPrimaryColor);
+    border-radius: 15px;
+    background-color: var(--elementBgColor);
+    margin: 0 1vw;
+    padding: 1.2vw;
+
+}
+
+.masterCard img {
+    width: 17vw;
+}
+
+.masterCard h2 {
+    font-size: var(--sectionHeading2FontSize);
+    width: fit-content;
+    font-weight: 200;
+    text-align: left;
+    margin: 5% 0;
+}
+
+.masterCard p {
+    font-size: var(--sectionParagraphFontSize);
+    font-weight: 100;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    font-weight: 200;
+}
+
+#uniqueMasterCard2,
+#uniqueMasterCard3 {
+    position: relative;
+    top: -5vw;
+    background: linear-gradient(130deg, #ffffff, var(--brandPrimaryColor) 13%, #002F2A 100%);
+}
+
+#uniqueMasterCard3 {
+    background: linear-gradient(130deg, #ffffff, var(--brandSecondaryColor)13%, #372D00 100%);
+}
+
+.masterRating {
+    position: relative;
+    top: -2vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.masterRating img {
+    height: 4vw;
+    margin: -0.5vw 0;
+}
+
+.masterCard:nth-child(2) {
+    transition-delay: .2s;
+}
+.masterCard:nth-child(3) {
+    transition-delay: .2s;
+}
+
+/* -----------------------Mobile device------------------------ */
+@media (max-width:600px) {
+    .masterPiece {
+        position: relative;
+        text-align: left;
+    }
+
+    .masterPiece h1 {
+        position: relative;
+        bottom: -4vw;
+        left: 83%;
+        font-size: var(--mobileHeadingFontSize);
+        font-weight: 500;
+        color: transparent;
+        background: linear-gradient(to right, rgba(255, 255, 255) 5%, rgba(91, 91, 91) 30%);
+        background-clip: text;
+        -webkit-background-clip: text;
+
+    }
+
+    .masterPiece #h {
+        display: block;
+        position: relative;
+        bottom: -2vw;
+        left: -21%;
+    }
+
+    .masterPiece h1 img {
+        display: inline;
+        width: 3vw;
+    }
+
+    .masterCardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        margin: 0;
+        gap: 6vw 1vw;
+    }
+
+    .masterCard {
+        width: 38vw;
+        text-align: center;
+        padding: 3vw;
+    }
+
+    .masterCard img {
+        width: 100%;
+    }
+
+    .masterCard h2 {
+        font-size: var(--mobileHeading2FontSize);
+    }
+
+    .masterCard p {
+        font-size: 2.8vw;
+    }
+    .masterCardContainer #uniqueMasterCard2 {
+        top: -11%;
+    }
+    .masterCardContainer #uniqueMasterCard3 {
+        top: -2%;
+    }
+    .masterCardContainer #uniqueMasterCard4 {
+        position: relative;
+        top: -13%
+    }
+    .masterPiece .masterRating {
+        display: none !important;
+    }
+}

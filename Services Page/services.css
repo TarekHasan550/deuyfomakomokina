@@ -1,0 +1,18 @@
+body h1 {
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 500;
+}
+
+body h3 {
+    font-size: var(--sectionHeading2FontSize);
+    font-weight: 200;
+}
+
+@media (max-width: 600px) {
+    body h1 {
+        font-size: var(--mobileHeadingFontSize);
+    }
+    body h3 {
+        font-size: var(--mobileParagraphFontSize);
+    }
+}

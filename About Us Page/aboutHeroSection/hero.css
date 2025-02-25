@@ -1,0 +1,226 @@
+/* About us hero section */
+.aboutHeroSection {
+    margin: 15% 0;
+}
+
+.aboutHeroContainer {
+    text-align: center;
+}
+
+.aboutHeroContainer h3 {
+    margin: 3% 0;
+}
+
+/* About us completed projects section */
+.completedProjects {
+    margin: 0 0 20%;
+}
+
+.completeProjectContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.completeProjectContainer .projectCounter p {
+    font-size: 1vw;
+}
+.completeProjectContainer hr:nth-child(8) {
+    display: none;
+}
+
+/* About us our strength section */
+.aboutOurStrength {
+    margin: 0 0 20%;
+}
+
+.ourStrength {
+    text-align: center;
+}
+
+.ourStrength h3 {
+    margin: 3% 0 0;
+}
+
+/* About us minds focused section */
+.aboutMindFocused {
+    margin: 0 0 20%;
+}
+
+.mindFocusedContainer {
+    text-align: center;
+}
+
+.mindFocusedContainer h3 {
+    margin: 3% 0 0;
+    
+}
+
+.mindFocusedContainer .aboutImages {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3vw 20vw 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.mindFocusedContainer .aboutImages .imgs {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15px;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.ourDescription {
+    display: none;
+    transition: all 0.5s ease;
+}
+.aboutImages .imgs:hover .ourDescription {
+    display: block;
+}
+.mindFocusedContainer .aboutImages .imgs h5 {
+    font-size: 1vw;
+    color: var(--brandPrimaryColor);
+}
+.mindFocusedContainer .aboutImages .imgs p {
+    font-size: 0.9vw;
+    color: white;
+    text-shadow: 0 0 8px black;
+    opacity: 0.9;
+    padding: 2%;
+}
+
+.aboutImages .imgs:nth-child(1){transition-delay: 0.0s;}
+.aboutImages .imgs:nth-child(2){transition-delay: 0.1s;}
+.aboutImages .imgs:nth-child(3){transition-delay: 0.2s;}
+.aboutImages .imgs:nth-child(4){transition-delay: 0.3s;}
+.aboutImages .imgs:nth-child(5){transition-delay: 0.4s;}
+
+#aboutRahat {
+    background: url(/assets/images/rahat.webp);
+    background-position: 40% 20%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#aboutTarek {
+    background: url(/assets/images/tarek.webp);
+    background-position: 70% 50%;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+#aboutArghoo {
+    background: url(/assets/images/argho.webp);
+    background-position: 40% 20%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#aboutRatul {
+    background: url(/assets/images/ratul.webp);
+    background-position: 40% 20%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#aboutRihan {
+    background: url(/assets/images/rihan.webp);
+    background-position: 40% 20%;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#aboutEnan {
+    background: url(/assets/images/);
+    display: none;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#aboutCherry {
+    background: url(/assets/images/);
+    display: none;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+/* About us solve problem section */
+.aboutSolveProblem {
+    margin: 0 0 20%;
+}
+
+.solveProblemContainer {
+    text-align: center;
+}
+
+.solveProblemContainer h3 {
+    margin: 3% 0;
+    
+}
+
+/* About us your vision section */
+.aboutYourVision {
+    margin: 0 0 20%;
+}
+
+.yourVisionContainer {
+    text-align: center;
+}
+
+.yourVisionContainer h3 {
+    margin: 3% 0;
+    
+}
+
+@media (max-width: 600px) {
+    .forMobileView {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 8%;
+    }
+
+    .completedProjects {
+        margin: 0;
+    }
+
+    .completeProjectContainer {
+        flex-direction: column;
+        margin: 0 0 0 10%;
+    }
+    .completeProjectContainer hr {
+        margin: 10% 0 5%;
+    }
+    .completeProjectContainer .projectCounter {
+        margin: 0 0 0 20%;
+    }
+    .completeProjectContainer .projectCounter p {
+        font-size: 2vw;
+    }
+    .ourStrength {
+        text-align: left;
+        position: relative;
+        top: 60%;
+    }
+    .ourStrength h3 {
+        font-size: var(--mobileParagraphFontSize);
+        margin: 5% 0 0 -60%;
+        padding: 0;
+        text-align: center;
+    }
+    .aboutMindFocused .mindFocusedContainer {
+        margin: 40% 1% 0;
+    }
+    .mindFocusedContainer h3 {
+        padding: 0;
+    }
+    .mindFocusedContainer .aboutImages {
+        margin: 0;
+    }
+    .mindFocusedContainer .aboutImages .imgs {
+        width: 30vw;
+        height: 30vw;
+    }
+
+}

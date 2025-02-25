@@ -1,0 +1,140 @@
+.trust {
+    margin: 0 5% 35%;
+}
+
+.trust .trustCardContainer h1 {
+    text-align: center;
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 500;
+    margin: 0 0 5%;
+    padding: 0 0 1%;
+}
+
+.trustCard {
+    position: relative;
+    background: linear-gradient(90deg, var(--brandPrimaryColor), var(--brandSecondaryColor));
+    margin: 2%;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.trustCardAfter {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5% 2%;
+    background: var(--elementBgColor);
+}
+
+.photoTxt {
+    text-align: center;
+    width: 30%;
+}
+
+.photoTxt img {
+    width: 5vw;
+}
+
+.photoTxt h5 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+
+.photoTxt p {
+    font-size: 0.8vw;
+}
+
+#verticalLine {
+    height: 8vw;
+    width: 1px;
+    background-color: var(--brandPrimaryColor);
+    margin: 0 1vw;
+}
+
+.customerReview {
+    display: flex;
+    margin: 0 0 0 4vw;
+}
+
+.customerReview h2 {
+    position: relative;
+    font-size: 2.3vw;
+    font-weight: 200;
+    font-family: var(--paragraphFont) !important;
+}
+
+.customerReview #trustImg {
+    position: absolute;
+    top: -6%;
+    left: -6%;
+    width: 3vw;
+}
+
+.customerReview #trustImg2 {
+    position: relative;
+    top: 1vw;
+    width: 3vw;
+}
+
+/* <-------------------Mobile Device----------------------> */
+@media (max-width:600px) {
+    .trust {
+        margin: 0 0 35%;
+    }
+    .trust .trustCardContainer h1 {
+        font-size: var(--mobileHeadingFontSize);
+        text-align: left;
+        color: transparent;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 5%, rgba(91, 91, 91, 0.3) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        margin: 0 0 5%;
+    }
+
+    .trustCard {
+        margin: 5% 0;
+    }
+
+    .trustCardAfter {
+        display: grid;
+        place-items: center;
+        padding: 10% 5%;
+    }
+
+    #verticalLine {
+        display: none;
+    }
+
+    .photoTxt img {
+        width: 15vw;
+    }
+
+    .photoTxt h5 {
+        font-family: var(--headingFont);
+        font-size: 5vw;
+        font-weight: 600;
+    }
+
+    .photoTxt p {
+        font-size: 2vw;
+        margin: 0 0 30%;
+    }
+
+    .customerReview h2 {
+        font-size: 4.5vw;
+        line-height: 150%;
+        margin: 0 0 0 2%;
+    }
+
+    .customerReview #trustImg {
+        width: 5vw;
+        left: -8%;
+    }
+
+    .customerReview #trustImg2 {
+        width: 5vw;
+        top: 10%;
+    }
+}
