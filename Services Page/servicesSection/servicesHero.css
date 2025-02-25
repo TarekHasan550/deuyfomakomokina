@@ -1,0 +1,163 @@
+.servicesHeroSection {
+    margin: 10% 0 10%;
+}
+
+.servicesHeroContainer {
+    text-align: center;
+}
+
+.servicesHeroSection h1 {
+    margin: 0 0 5%;
+}
+
+.servicesHeroContainer h3 {
+    margin: 3% 0;
+    padding: 0 15%;
+}
+
+.serviceCardsSection {
+    text-align: center;
+    margin: 0 3% 20%;
+}
+
+.servicesCardAfter {
+    background: linear-gradient(var(--brandPrimaryColor) 30%, var(--bodyColor));
+    width: 100%;
+    height: 100%;
+    padding: 0.8px 1px;
+    border-radius: 15px;
+    margin: 0 0 2%;
+}
+
+.serviceCard {
+    position: relative;
+    background: var(--elementBgColor);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: fit-content;
+    padding: 2.5% 5.5%;
+}
+
+.serviceCard h2 {
+    position: relative;
+    font-size: 2.2vw;
+    font-weight: 500;
+}
+
+.serviceCard h2 img {
+    position: absolute;
+    display: inline-block;
+    height: 2.5vw;
+    top: 10%;
+    left: 97%;
+    justify-content: space-between;
+    width: 2.5vw;
+    color: cyan;
+}
+
+.serviceCard h3 {
+    position: absolute;
+    left: 4.5%;
+    display: none;
+    opacity: 0;
+    width: 90%;
+    z-index: 20;
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin: 4% 0 0;
+    animation: appear 1.5s ease-in-out forwards;
+}
+
+@keyframes heightAppear {
+    0% {
+        height: 3vw;
+    }
+
+    100% {
+        height: 11.5vw;
+    }
+}
+
+@keyframes heightDisappear {
+    0% {
+        height: 11.5vw;
+    }
+
+    100% {
+        height: 3vw;
+    }
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIconReverse {
+    0% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .servicesHeroSection h1 br {
+        display: none;
+    }
+    .servicesHeroSection h1 {
+        margin: 0 2%;
+    }
+    .servicesHeroSection h3 {
+        padding: 0 5%;
+    }
+    .servicesCardAfter {
+        border-radius: 10px;
+    }
+
+    .serviceCard {
+        padding: 4% 1%;
+        border-radius: 10px;
+    }
+
+    .serviceCard h2 {
+        font-size: 2.9vw;
+    }
+
+    .serviceCard h2 img {
+        left: 96.5%;
+    }
+    .serviceCard h3 {
+        font-size: 2vw;
+    }
+}

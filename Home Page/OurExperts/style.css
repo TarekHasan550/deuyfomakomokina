@@ -1,0 +1,175 @@
+.experts {
+    text-align: left;
+    display: grid;
+    place-items: center;
+    margin: 0 0 35%;
+}
+
+.experts h1 {
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 200;
+    margin: 0 0 2%;
+    text-align: center;
+}
+
+.experts h5 {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 100;
+    width: calc(100%/1.5);
+    margin: 0 0 4%;
+}
+
+.expertsCardContainer {
+    display: flex;
+    gap: 2vw;
+    padding: 0 3vw;
+}
+
+.expertsCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px solid var(--brandPrimaryColor);
+    flex: 1;
+    height: 35vw;
+    width: 25vw;
+    padding: 1vw;
+    filter: grayscale(1);
+    transition: all 0.3s ease-out;
+}
+
+.expertsCard:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in;
+}
+
+.expertsCard:hover>* {
+    display: block;
+}
+
+.expertsCard h3,
+.expertsCard h4,
+.expertsCard button {
+    font-size: var(--sectionParagraphFontSize);
+    margin: 4% 0 0;
+    color: var(--brandPrimaryColor);
+    display: none;
+    text-shadow: 0 0 5px black;
+}
+
+.expertsCard h4 {
+    color: white;
+}
+
+.expertsCard button {
+    color: white;
+    width: fit-content;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 1.1vw;
+    padding: 0.7vw 1.2vw;
+    cursor: pointer;
+}
+
+
+#expertRahat,
+#expertArgho,
+#expertRehan,
+#expertTarek {
+    background-image: url("/assets/images/rahat.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#expertRahat {
+    background-position: center 20%;
+}
+
+#expertArgho {
+    background-image: url("/assets/images/argho.webp");
+    background-position-y: 100%;
+}
+
+#expertRehan {
+    background-image: url("/assets/images/rihan.webp");
+    background-position-y: 35%;
+}
+
+#expertTarek {
+    background-image: url(/assets/images/tarek.webp);
+    background-size: 180%;
+    background-position: 65% 70%;
+    display: none;
+}
+
+/* -----------------mobile device---------------- */
+@media (max-width: 600px) {
+    .experts {
+        place-items: initial;
+    }
+
+    .experts h1 {
+        font-size: var(--mobileHeadingFontSize);
+        font-weight: 500;
+        text-align: left;
+        color: transparent;
+        background: linear-gradient(to right, rgba(255, 255, 255), rgba(91, 91, 91, 0.8) 15%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    .experts h5 {
+        text-align: left;
+        font-size: var(--mobileParagraphFontSize);
+        font-weight: 200;
+        width: 100%;
+    }
+
+    .expertsCardContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3% 1%;
+        place-items: center;
+        padding: 0;
+    }
+
+    .expertsCard {
+        width: 95%;
+        height: 55vw;
+        padding: 5%;
+        filter: grayscale(0);
+        box-sizing: border-box;
+    }
+    #expertRahat,
+    #expertArgho,
+    #expertRehan,
+    #expertTarek {
+        position: relative;
+
+    }
+
+    #expertArgho {
+        top: 10%;
+    }
+
+    #expertTarek {
+        display: flex;
+        top: 10%;
+    }
+
+    .expertsCard h3,
+    .expertsCard h4,
+    .expertsCard button {
+        display: block;
+        font-size: 2vw;
+        width: fit-content;
+    }
+    .expertsCard h3 {
+        font-size: var(--mobileParagraphFontSize);
+    }
+}

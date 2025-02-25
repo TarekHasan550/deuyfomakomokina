@@ -1,0 +1,108 @@
+.heroContainer {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    margin: 10% 0 20%;
+}
+
+.heroContainer h1 {
+    font-family: var(--headingFont);
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 500;
+    margin: 0 0 3%;
+}
+
+#txtColor {
+    background: linear-gradient(115.9deg, #00FFE6 35%, #000000 100%);
+    font-weight: 500;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.heroContainer h4 {
+    font-size: var(--sectionHeading2FontSize);
+    font-weight: 200;
+    margin: 0 0 3%;
+}
+
+.heroContainer button {
+    display: none;
+    margin: 0 0 6%;
+}
+
+.heroContainer .heroVideo {
+    position: relative;
+    width: 90vw;
+    height: 50vw;
+    padding: 1vw;
+    margin: 10% 0 0;
+    justify-self: center;
+    border: 1.5px solid rgba(0, 255, 230, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 255, 230, 0.15);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.heroContainer iframe {
+    border-radius: 20px;
+    /* opacity: 0; */
+}
+
+#heroCircle {
+    position: absolute;
+    top: -15%;
+    width: 90vw;
+    height: 70vw;
+    border-radius: 50%;
+    z-index: -1;
+}
+#heroCircle::before {
+    content: "";
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/icons/grid-for-fubiweb.svg);
+    mask-image: radial-gradient(ellipse, white 30%, transparent 75%);
+    background-size: 380%;
+    opacity: 0.15;
+}
+#heroCircle::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    height: 60%;
+    width: 80%;
+    border-radius: 50%;
+    background: var(--brandPrimaryColor);
+    filter: blur(120px);
+}
+
+@media (max-width:600px) {
+    .heroContainer h1 {
+        font-size: var(--mobileHeadingFontSize);
+    }
+
+    .heroContainer h4 {
+        font-size: var(--mobileParagraphFontSize);
+    }
+
+    .heroContainer h1 br,
+    h4 br {
+        display: none;
+    }
+
+    .heroContainer h1 #txtColor {
+        background: linear-gradient(115.9deg, #00FFE6 5%, #000000 120%);
+        background-clip: text;
+    }
+
+    .heroContainer h1 span:first-child {
+        background: var(--brandPrimaryColor) !important;
+        background-clip: text !important;
+    }
+}

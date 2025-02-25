@@ -1,0 +1,29 @@
+body h1 {
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 500;
+}
+body h3 {
+    font-size: var(--sectionHeading2FontSize);
+    font-weight: 200;
+    padding: 0 15%;
+}
+
+@media (max-width: 600px) {
+    body h1 br {
+        display: none;
+    }
+    body h1 {
+        font-size: var(--mobileHeadingFontSize);
+    }
+    body h3 br {
+        display: none;
+    }
+    body h3 {
+        font-size: var(--mobileParagraphFontSize);
+        padding: 0;
+    }
+    body .primaryButton {
+        font-size: 2.5vw;
+        padding: 2vw 4vw ;
+    }
+}

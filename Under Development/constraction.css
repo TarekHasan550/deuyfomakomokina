@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    place-items: center;
+}
+.underDevelopment {
+    text-align: center;
+}
+.underDevelopment h1 {
+    font-size: 40vw;
+}

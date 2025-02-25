@@ -1,0 +1,132 @@
+.whyFuBiWeb {
+    box-sizing: border-box;
+    padding: 0 4vw;
+    margin: 0 0 35%;
+}
+
+.whyFuBiWeb h1 {
+    width: fit-content;
+    font-size: var(--sectionHeadingFontSize);
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 5%, rgba(91, 91, 91, 0.3) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 0 0 5%;
+}
+
+.whyFuBiWeb h1 img {
+    width: 1.5vw;
+}
+
+.whyBackCard {
+    display: flex;
+    flex: 1;
+}
+
+.whyCardContainer {
+    display: flex;
+    padding: 0 1vw;
+    gap: 10vw;
+}
+
+.whyCard {
+    position: relative;
+    padding: 10% 0 0;
+}
+
+.whyCard img {
+    width: 6vw;
+    position: absolute;
+    top: 0;
+}
+
+#icon5 {
+    width: 5vw;
+}
+
+.whyCard h2 {
+    font-size: var(--sectionHeading2FontSize);
+    font-weight: 600;
+    margin: 25% 0 5%;
+}
+
+.whyCard p {
+    font-size: var(--sectionParagraphFontSize);
+    font-weight: 200;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.whyBackCard:nth-child(1) {
+    transition-delay: .6s;
+}
+.whyBackCard:nth-child(2) {
+    transition-delay: .4s;
+}
+.whyBackCard:nth-child(3) {
+    transition-delay: .2s;
+}
+/* <-------------------Mobile Device----------------------> */
+@media (max-width:600px) {
+    .whyFuBiWeb {
+        width: 100%;
+        padding: 0;
+    }
+
+    .whyFuBiWeb h1 {
+        font-size: var(--mobileHeadingFontSize);
+    }
+
+    .whyFuBiWeb h1 img {
+        width: 3vw;
+    }
+    .whyCardContainer {
+        display: grid;
+        place-items: center;
+        text-align: center;
+        margin: 5% 0 0;
+    }
+
+    .whyBackCard {
+        background: linear-gradient(var(--brandSecondaryColor), var(--bodyColor));
+        width: 100%;
+        height: 100%;
+        padding: 0.8px 1px;
+        border-radius: 15px;
+    }
+
+    .whyCard {
+        width: auto;
+        background-color: var(--elementBgColor);
+        border: 1px solid transparent;
+        border-radius: 15px;
+        z-index: 0;
+    }
+
+    .whyCard h2 {
+        font-size: var(--mobileHeading2FontSize);
+        margin: 2% 0;
+    }
+
+    .whyCard p {
+        font-size: var(--mobileParagraphFontSize);
+        margin: 0 12% 8%;
+        line-height: normal;
+    }
+
+    .whyCard img {
+        width: 30%;
+        position: static;
+        margin: 8% 0;
+    }
+
+    #icon5 {
+        width: 20%;
+    }
+
+    #icon6 {
+        position: relative;
+        left: 3%;
+    }
+}

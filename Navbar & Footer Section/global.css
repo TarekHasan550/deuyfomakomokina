@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --bodyColor: black;
+    --elementBgColor: rgba(15, 15, 15);
+    --brandPrimaryColor: #00ffe6;
+    --brandSecondaryColor: #ffce00;
+    --sectionHeadingFontSize: 3.6vw;
+    --sectionHeading2FontSize: 2.5vw;
+    --sectionParagraphFontSize: 1.2vw;
+    --gradientColorPrimary: rgba(0, 255, 230, 0.8);
+    --sectionRadius: 15px;
+    --paragraphFont: "DM Sans";
+    --headingFont: "Space Grotesk";
+    --mobileHeadingFontSize: 7.2vw;
+    --mobileHeading2FontSize: 5.3vw;
+    --mobileParagraphFontSize: 3.5vw;
+}
+
+* {
+    font-family: var(--paragraphFont);
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1.2vw 2vw;
+    background-color: var(--bodyColor);
+    font-family: var(--paragraphFont);
+    color: white;
+    overflow-x: hidden !important;
+    z-index: 0;
+}
+
+body h1,
+body h2 {
+    font-family: "Space Grotesk" !important;
+}
+
+.primaryButton {
+    position: relative;
+    background: var(--brandPrimaryColor);
+    box-shadow: inset 0 5px 4px rgba(255, 255, 255, 0.8), inset 0 -15px 20px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 30px;
+    padding: .9vw 2vw;
+    margin-left: 1.5vw;
+    font-family: var(--paragraphFont);
+    font-size: var(--sectionParagraphFontSize);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+#btnCircle {
+    position: absolute;
+    bottom: 80%;
+    background: white;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    filter: blur(8px);
+}
+
+.primaryButton:hover {
+    color: white;
+    background: transparent;
+    box-shadow: inset 0 0 10px white;
+    transform: scale(.95);
+    transition: all .5s;
+}
+
+#secondaryButton {
+    background: transparent;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.5);
+    color: #D9D9D9;
+}
+
+#secondaryButton:hover {
+    box-shadow: inset 0 0 10px white;
+}
+
+/* Navbar section  */
+#navbar {
+    position: sticky;
+    top: 0;
+    margin: -1.2vw -2vw;
+    padding: 0.5vw 2vw;
+    z-index: 1000;
+    background: linear-gradient(rgba(0, 0, 0, 1), transparent);
+    backdrop-filter: blur(1px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8vw 2vw;
+    border-radius: 100px;
+}
+
+.navbar .logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    gap: 0.8vw;
+}
+
+.navbar .logo img {
+    width: 1.5vw;
+}
+
+.navbar .menu img {
+    display: none;
+    cursor: pointer;
+    width: 6vw;
+}
+
+.navbar .links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    margin: 0 0.5vw;
+    font-size: var(--sectionParagraphFontSize);
+    text-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 0.3vw 0.7vw 0.4vw;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+
+.navbar .links a:hover {
+    transform: scale(1.09);
+}
+.navbar .links a::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -3vw;
+    transform: skewX(45deg);
+    background-color: #202020;
+    z-index: -1;
+    transition: all 0.4s linear;
+}
+.navbar .links a:hover::before {
+    width: 200%;
+}
+
+#btnCircle {
+    left: 20%;
+}
+
+.mobileLinks {
+    display: none;
+}
+
+.navbar .links p {
+    font-weight: 200;
+}
+
+/* Footer Section  */
+.footerContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    background-color: white;
+    color: black;
+    border-radius: 30px 30px 0 0;
+    margin: -2vw;
+    padding: 7vw 5vw 4vw;
+    font-size: var(--sectionParagraphFontSize);
+}
+
+.footerContainer .footerGroup1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    padding: 1.2vw 2vw;
+    gap: 1vw;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+
+.footerGroup2 a,
+.footerGroup3 a {
+    display: flex;
+    text-decoration: underline;
+    width: fit-content;
+    color: black;
+    margin: 0 0 2vw;
+}
+.footerGroup4 p {
+    margin: 0 0 2vw;
+}
+.footerGroup5 {
+    place-self: center;
+    grid-column: 1/5;
+    margin: 4vw 0 0;
+}
+
+.footerGroup5 img {
+    margin: 0 .6vw;
+    width: 4vw;
+}
+
+.footerGroup2 a:hover,
+.footerGroup3 a:hover {
+    text-shadow: 0 0 15px black;
+    transform: scale(0.98);
+}
+
+.footerGroup5 img:hover {
+    filter: drop-shadow(0 0 15px rgb(0, 255, 230));
+    transform: scale(0.95);
+}
+
+#line {
+    grid-column: 1/5;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+}
+
+/* <-------------------Mobile Device----------------------> */
+
+@media (max-width: 600px) {
+    .navbar .links {
+        display: none;
+    }
+
+    #navbarContainer {
+        margin: -1vw;
+        padding: 2vw 1.2vw;
+    }
+
+    .navbar .logo img {
+        width: 3.5vw;
+        margin: 0 1vw 0 0;
+    }
+
+    .navbar .logo a {
+        font-size: 2.5vw;
+    }
+
+    .navbar .menu img {
+        display: block;
+    }
+
+    .navbar .menu {
+        position: relative;
+    }
+
+    .navbar .mobileLinks {
+        position: absolute;
+        top: 90%;
+        right: 30%;
+        width: 35vw;
+        display: none;
+        gap: 2vw;
+        padding: 5vw 3vw;
+        background: rgba(33, 33, 33, 0.5);
+        border-radius: 20px 0px 20px 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 3px rgba(0, 255, 230, 0.8);
+    }
+
+    .navbar .mobileLinks button {
+        font-size: var(--mobileParagraphFontSize);
+        font-weight: 200;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        background: rgba(67, 67, 67, 0.8);
+        box-shadow: inset 0 0 3px rgba(0, 255, 230, 01);
+        text-shadow: 0 0 10px black;
+        padding: 2vw;
+        margin: 1vw 0;
+        width: 100%;
+    }
+
+    .navbar .mobileLinks .primaryButton {
+        background: var(--brandPrimaryColor);
+        box-shadow: none;
+        font-weight: 300;
+    }
+
+    .navbar #btnCircle {
+        display: none;
+    }
+
+    .navbar .active {
+        display: grid;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+    }
+
+    .footerContainer,
+    .footerContainer p {
+        font-size: 2.5vw;
+    }
+
+    .footerContainer .footerGroup1 button {
+        font-size: 2.5vw;
+        border-radius: 5px;
+    }
+}
+
+
+/* --------------------------Animation Part ---------------------------- */
+.hideLeft {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50%) scale(0.9);
+    filter: blur(2px);
+}
+.hideRight {
+    position: relative;
+    opacity: 0;
+    transform: translateX(50%) scale(0.9);
+    filter: blur(2px);
+}
+.hideDown {
+    position: relative;
+    opacity: 0;
+    transform: translateY(80%) scale(0.8);
+    filter: blur(2px);
+}
+.hideLeftConic {
+    position: relative;
+    opacity: 0;
+    transform: translate(-100%, 10%) scale(0.8);
+    filter: blur(2px);
+}
+.hideRightConic {
+    position: relative;
+    opacity: 0;
+    transform: translate(100%, 10%) scale(0.8);
+    filter: blur(2px);
+}
+.hideBlur {
+    filter: blur(100px);
+}
+.hideInside {
+    position: relative;
+    opacity: 0;
+    transform: scale(0.7);
+    transition-delay: .2s !important;
+    filter: blur(2px);
+}
+
+.showAll {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+    filter: blur(0);
+    transition: all 1s ease;
+}
