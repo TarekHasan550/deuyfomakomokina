@@ -11,8 +11,7 @@
     position: relative;
     text-decoration: none;
     color: white;
-    /* Default text color */
-    transition: color 0.4s linear;
+    transition: color 0.25s linear;
 }
 
 .contactUsSocial a::after {
@@ -23,17 +22,15 @@
     width: 150%;
     height: 100%;
     z-index: -1;
-    transition: left 0.4s linear;
+    transition: left 0.25s linear;
 }
 
 .contactUsSocial a:hover {
     color: cyan;
-    /* Change text color */
 }
 
 .contactUsSocial a:hover::after {
     left: 0;
-    /* Move background effect */
 }
 
 .contactUsSocial h3 {
@@ -117,6 +114,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 form .primaryButton {
     margin: 10% 0 0;
+    width: 60%;
 }
 
 @media (max-width: 600px) {

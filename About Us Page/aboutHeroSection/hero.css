@@ -60,7 +60,7 @@
     flex-wrap: wrap;
     margin: 3vw 20vw 0;
     justify-content: center;
-    text-align: center;
+    cursor: pointer;
 }
 
 .mindFocusedContainer .aboutImages .imgs {
@@ -80,22 +80,29 @@
     display: block;
 }
 .mindFocusedContainer .aboutImages .imgs h5 {
-    font-size: 1vw;
+    font-size: 1.2vw;
     color: var(--brandPrimaryColor);
+    text-shadow: 0 0 3px black;
+    filter: drop-shadow(0 0 3px black);
+    padding: 0 2%;
+    text-align: left;
 }
 .mindFocusedContainer .aboutImages .imgs p {
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     color: white;
-    text-shadow: 0 0 8px black;
+    text-shadow: 0 0 3px black;
+    filter: drop-shadow(0 0 3px black);
     opacity: 0.9;
     padding: 2%;
+    line-height: 120%;
+    text-align: left;
 }
 
 .aboutImages .imgs:nth-child(1){transition-delay: 0.0s;}
-.aboutImages .imgs:nth-child(2){transition-delay: 0.1s;}
-.aboutImages .imgs:nth-child(3){transition-delay: 0.2s;}
-.aboutImages .imgs:nth-child(4){transition-delay: 0.3s;}
-.aboutImages .imgs:nth-child(5){transition-delay: 0.4s;}
+.aboutImages .imgs:nth-child(2){transition-delay: 0.05s;}
+.aboutImages .imgs:nth-child(3){transition-delay: 0.1s;}
+.aboutImages .imgs:nth-child(4){transition-delay: 0.15s;}
+.aboutImages .imgs:nth-child(5){transition-delay: 0.2s;}
 
 #aboutRahat {
     background: url(/assets/images/rahat.webp);
