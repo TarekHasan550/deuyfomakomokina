@@ -1,6 +1,6 @@
 .masterPiece {
     text-align: center;
-    margin: 0 0 35%;
+    margin: 0 0 25%;
 }
 
 .masterPiece h1 {
@@ -82,6 +82,9 @@
 
 /* -----------------------Mobile device------------------------ */
 @media (max-width:600px) {
+    body {
+        overflow-x: hidden !important;
+    }
     .masterPiece {
         position: relative;
         text-align: left;
@@ -91,6 +94,7 @@
         position: relative;
         bottom: -4vw;
         left: 83%;
+        width: fit-content;
         font-size: var(--mobileHeadingFontSize);
         font-weight: 500;
         color: transparent;
@@ -135,7 +139,7 @@
     }
 
     .masterCard p {
-        font-size: 2.8vw;
+        font-size: var(--mobileParagraphFontSize);
     }
     .masterCardContainer #uniqueMasterCard2 {
         top: -11%;

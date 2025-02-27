@@ -1,5 +1,5 @@
 .trust {
-    margin: 0 5% 35%;
+    margin: 0 5% 25%;
 }
 
 .trust .trustCardContainer h1 {
@@ -118,7 +118,7 @@
     }
 
     .photoTxt p {
-        font-size: 2vw;
+        font-size: 3vw;
         margin: 0 0 30%;
     }
 

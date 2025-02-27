@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 body h1 {
     font-size: var(--sectionHeadingFontSize);
     font-weight: 500;
