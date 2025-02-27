@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/assets/icons/favicon.svg" type="image/x-icon">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Home Page/style.css">
     <link rel="stylesheet" href="/Navbar & Footer Section/global.css" />
     <link rel="stylesheet" href="/Home Page/Hero Section/style.css" />
     <link rel="stylesheet" href="/Home Page/OurUniqueProcess Section/style.css" />
@@ -159,7 +159,7 @@
     <!-- Why FuBiWeb section finished -->
 
     <!-- Ready to transform section  -->
-    <div class="transformSection">
+    <div class="transformSection hideBlur">
         <div class="transformContainer">
             <h1>
                 Ready to Transform <br />
@@ -169,11 +169,12 @@
                 Don’t just dream it, achieve it with Fubiweb. Click the button below
                 to get started on your journey to a stunning, high-performing website.
             </h3>
-            <button class="primaryButton">
+            <button class="primaryButton" onclick="location.href='/under Development/constraction.html'">
                 Request a Quote
                 <div id="btnCircle"></div>
             </button>
-            <button class="primaryButton" id="secondaryButton">
+            <button class="primaryButton" id="secondaryButton"
+                onclick="location.href='/under Development/constraction.html'">
                 Request a Quote
             </button>
         </div>
@@ -248,20 +249,22 @@
 
     <!-- Our masterpiece section  -->
     <section class="masterPiece">
-        <h1>Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
-        <h1 id="h">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
+        <h1 class="hideInside">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
+        <h1 id="h" class="hideInside">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
         <div class="masterCardContainer">
             <div class="masterCard hideLeft" id="uniqueMasterCard1">
                 <img src="/assets/images/Rectangle 105.svg" alt="" />
                 <h2>Earned Trust</h2>
-                <p>Show your expertise in a way that genuinely builds trust, making it easier for your prospects to become loyal clients.
+                <p>Show your expertise in a way that genuinely builds trust, making it easier for your prospects to
+                    become loyal clients.
                 </p>
             </div>
             <div class="masterCard hideLeftConic" id="uniqueMasterCard2">
                 <img src="/assets/images/Rectangle 106.svg" alt="" />
                 <h2>Authentic Branding</h2>
                 <p>
-                    Create a brand that feels true to you, builds recognition, and naturally attracts the right audience.
+                    Create a brand that feels true to you, builds recognition, and naturally attracts the right
+                    audience.
                 </p>
             </div>
             <div class="masterCard hideRightConic" id="uniqueMasterCard3">
@@ -289,31 +292,31 @@
 
     <!-- Our expert section  -->
     <section class="experts">
-        <h1>Meet The Experts</h1>
-        <h5>
+        <h1 class="hideInside">Meet The Experts</h1>
+        <h5 class="hideBlur">
             Our team of innovators, strategists, and visionaries is here to guide
             you toward success. Together, we make the extraordinary happen
         </h5>
         <div class="expertsCardContainer">
-            <div class="expertsCard" id="expertRahat">
+            <div class="expertsCard hideLeft" id="expertRahat">
                 <h3>Rashedul Rahat</h3>
                 <h4>
                     Founder and CEO. Rashedul believes every business has a unique story
                     worth sharing-and he ensures it reaches the right audience with
                     impact and authenticity.
                 </h4>
-                <button>SEE HIS PROMISE TO YOU</button>
+                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
             </div>
-            <div class="expertsCard" id="expertArgho">
+            <div class="expertsCard hideLeft" id="expertArgho">
                 <h3>Argho Rozario</h3>
                 <h4>
                     Senior Developer. Argho believes every line of code is an
                     opportunity to create meaningful digital experiences that inspire
                     trust and drive success.
                 </h4>
-                <button>SEE HIS PROMISE TO YOU</button>
+                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
             </div>
-            <div class="expertsCard" id="expertRehan">
+            <div class="expertsCard hideLeft" id="expertRehan">
                 <h3>Raiyat Rehan</h3>
                 <h4>
                     Content Creator. Raiyat believes every piece of content is a story
@@ -321,16 +324,15 @@
                     narratives that resonate deeply with audiences, building connections
                     that last.
                 </h4>
-                <button>SEE HIS PROMISE TO YOU</button>
+                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
             </div>
             <div class="expertsCard" id="expertTarek">
                 <h3>Tarek Hasan</h3>
                 <h4>
-                    Junior Developer & Programmer. Tarek believes every line of code is an
-                    opportunity to create meaningful digital experiences that inspire
-                    trust and drive success.
+                    Programmer | The Nerd. Believes every line of code is a chance to create simple, efficient
+                    systems that solve problems and make things more easier.
                 </h4>
-                <button>SEE HIS PROMISE TO YOU</button>
+                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
             </div>
         </div>
     </section>
@@ -350,8 +352,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We don’t believe in locking clients into long-term contracts. You own everything – your website, your domain, and your
-                        hosting. We make sure you have full access and control from day one. If you ever decide to leave, you can take your
+                        We don’t believe in locking clients into long-term contracts. You own everything – your website,
+                        your domain, and your
+                        hosting. We make sure you have full access and control from day one. If you ever decide to
+                        leave, you can take your
                         website with you, no hidden fees, no surprises.
                     </h3>
                 </div>
@@ -363,7 +367,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We believe in transparent pricing. Before starting, we provide a clear breakdown of costs so you know exactly what
+                        We believe in transparent pricing. Before starting, we provide a clear breakdown of costs so you
+                        know exactly what
                         you're paying for. No last-minute surprises. If a service isn't essential, we won’t push it.
                     </h3>
                 </div>
@@ -375,7 +380,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We don’t just build websites – we build long-term relationships. That’s why we offer post-launch support and training to
+                        We don’t just build websites – we build long-term relationships. That’s why we offer post-launch
+                        support and training to
                         help you manage your website. If you ever need help, we’ll be here.
                     </h3>
                 </div>
@@ -387,7 +393,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Every business is unique, and so is every website we build. We tailor each design to fit your brand, your audience, and
+                        Every business is unique, and so is every website we build. We tailor each design to fit your
+                        brand, your audience, and
                         your goals. We don’t just reskin templates – we create solutions that actually help you grow.
                     </h3>
                 </div>
@@ -399,8 +406,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Fubiweb is new, but our expertise isn’t. Our team has built multiple projects before launching this agency. While we
-                        don’t have a long client list yet, we’re confident in our work. We can show you sample projects, offer a test project,
+                        Fubiweb is new, but our expertise isn’t. Our team has built multiple projects before launching
+                        this agency. While we
+                        don’t have a long client list yet, we’re confident in our work. We can show you sample projects,
+                        offer a test project,
                         or even build a free concept so you can see our quality firsthand.
                     </h3>
                 </div>
@@ -412,7 +421,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We’re building Fubiweb for the long haul, and our goal is to become your trusted digital partner. We offer ongoing
+                        We’re building Fubiweb for the long haul, and our goal is to become your trusted digital
+                        partner. We offer ongoing
                         support, and you’ll always have a way to reach us.
                     </h3>
                 </div>
@@ -424,8 +434,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We may be new, but our skills, experience, and commitment to results speak louder. We bring fresh ideas, personalized
-                        attention, and a hunger to prove our worth. Plus, we offer flexible pricing and a risk-free process to build trust with
+                        We may be new, but our skills, experience, and commitment to results speak louder. We bring
+                        fresh ideas, personalized
+                        attention, and a hunger to prove our worth. Plus, we offer flexible pricing and a risk-free
+                        process to build trust with
                         you.
                     </h3>
                 </div>
@@ -437,8 +449,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We understand why you’d ask that. Many agencies overcharge, so when they see fair pricing, it feels 'too good to be
-                        true.' Our approach is simple – we price fairly based on the work needed, without unnecessary markups. And if you want
+                        We understand why you’d ask that. Many agencies overcharge, so when they see fair pricing, it
+                        feels 'too good to be
+                        true.' Our approach is simple – we price fairly based on the work needed, without unnecessary
+                        markups. And if you want
                         premium custom solutions, we provide those too.
                     </h3>
                 </div>
@@ -450,7 +464,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Since we’re new, we’re actively collecting testimonials and case studies. If you'd like, we can connect you with one of
+                        Since we’re new, we’re actively collecting testimonials and case studies. If you'd like, we can
+                        connect you with one of
                         our early clients, or you can check real projects we’ve worked on.
                     </h3>
                 </div>
@@ -462,8 +477,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We guarantee effort, strategy, and a website designed for results. But like any business tool, a website’s success
-                        depends on factors like marketing, content, and audience engagement. What we do guarantee is a solid foundation that
+                        We guarantee effort, strategy, and a website designed for results. But like any business tool, a
+                        website’s success
+                        depends on factors like marketing, content, and audience engagement. What we do guarantee is a
+                        solid foundation that
                         supports your goals and maximizes your chances of success.
                     </h3>
                 </div>
@@ -475,8 +492,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Our pricing depends on your specific needs. Instead of offering a one-size-fits-all price, we tailor our solutions based
-                        on your goals and budget. Let’s jump on a quick call so we can understand what you need and provide a clear quote.
+                        Our pricing depends on your specific needs. Instead of offering a one-size-fits-all price, we
+                        tailor our solutions based
+                        on your goals and budget. Let’s jump on a quick call so we can understand what you need and
+                        provide a clear quote.
                     </h3>
                 </div>
             </div>
@@ -487,8 +506,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Absolutely! DIY platforms like Wix and WordPress are great for simple websites. However, businesses that want a strong
-                        brand presence, better conversions, and a site that scales usually prefer a custom-built website. It all depends on
+                        Absolutely! DIY platforms like Wix and WordPress are great for simple websites. However,
+                        businesses that want a strong
+                        brand presence, better conversions, and a site that scales usually prefer a custom-built
+                        website. It all depends on
                         what’s best for your goals – would you like me to guide you on the pros and cons?
                     </h3>
                 </div>
@@ -500,8 +521,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        That’s a valid concern, and that’s why we involve you throughout the process. Before we finalize anything, we present
-                        concepts and revisions based on your feedback. Our goal is to make sure you're 100% happy with the end result.
+                        That’s a valid concern, and that’s why we involve you throughout the process. Before we finalize
+                        anything, we present
+                        concepts and revisions based on your feedback. Our goal is to make sure you're 100% happy with
+                        the end result.
                     </h3>
                 </div>
             </div>
@@ -512,8 +535,10 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Timelines depend on the project’s complexity. A simple website might take a few weeks, while a larger one could take
-                        longer. We prioritize quality over rushing, but we also make sure to meet deadlines. If you have a target launch date,
+                        Timelines depend on the project’s complexity. A simple website might take a few weeks, while a
+                        larger one could take
+                        longer. We prioritize quality over rushing, but we also make sure to meet deadlines. If you have
+                        a target launch date,
                         we can plan accordingly.
                     </h3>
                 </div>
@@ -525,7 +550,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        Yes! We build websites with user-friendliness in mind. You’ll have full control, and we provide training or guides to
+                        Yes! We build websites with user-friendliness in mind. You’ll have full control, and we provide
+                        training or guides to
                         help you manage updates. Of course, if you ever need extra support, we’re here to help.
                     </h3>
                 </div>
@@ -537,7 +563,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We offer different support options after launch, from one-time updates to ongoing maintenance plans. You’ll always have
+                        We offer different support options after launch, from one-time updates to ongoing maintenance
+                        plans. You’ll always have
                         access to your site, so you’re never locked in – but if you ever need help, we’re here.
                     </h3>
                 </div>
@@ -549,7 +576,8 @@
                         <img src="/assets/icons/pluseIcon.svg" alt="" />
                     </h2>
                     <h3>
-                        We get it – priorities change. That’s why we break the project into phases, so you’re not committing to everything
+                        We get it – priorities change. That’s why we break the project into phases, so you’re not
+                        committing to everything
                         upfront. If something comes up, we’ll work with you to adjust.
                     </h3>
                 </div>

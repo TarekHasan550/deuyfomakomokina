@@ -2,7 +2,7 @@
     text-align: left;
     display: grid;
     place-items: center;
-    margin: 0 0 35%;
+    margin: 0 0 25%;
 }
 
 .experts h1 {
@@ -93,11 +93,13 @@
 #expertArgho {
     background-image: url("/assets/images/argho.webp");
     background-position-y: 100%;
+    transition-delay: 0.2s;
 }
 
 #expertRehan {
     background-image: url("/assets/images/rihan.webp");
     background-position-y: 35%;
+    transition-delay: 0.4s;
 }
 
 #expertTarek {
@@ -105,6 +107,7 @@
     background-size: 180%;
     background-position: 65% 70%;
     display: none;
+    transition-delay: 0.6s;
 }
 
 /* -----------------mobile device---------------- */
@@ -171,5 +174,9 @@
     }
     .expertsCard h3 {
         font-size: var(--mobileParagraphFontSize);
+    }
+    .expertsCard h4 {
+        font-size: 3vw;
+        line-height: 100%;
     }
 }

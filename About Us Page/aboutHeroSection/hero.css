@@ -58,14 +58,13 @@
 .mindFocusedContainer .aboutImages {
     display: flex;
     flex-wrap: wrap;
-    margin: 3vw 20vw 0;
+    margin: 3vw 10vw 0;
     justify-content: center;
-    cursor: pointer;
 }
 
 .mindFocusedContainer .aboutImages .imgs {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 15px;
     margin: 2%;
     display: flex;
@@ -78,25 +77,33 @@
 }
 .aboutImages .imgs:hover .ourDescription {
     display: block;
+    text-align: left;
+    padding: 3%;
 }
-.mindFocusedContainer .aboutImages .imgs h5 {
+.mindFocusedContainer .aboutImages .imgs .ourDescription h5 {
     font-size: 1.2vw;
     color: var(--brandPrimaryColor);
     text-shadow: 0 0 3px black;
     filter: drop-shadow(0 0 3px black);
-    padding: 0 2%;
-    text-align: left;
 }
-.mindFocusedContainer .aboutImages .imgs p {
+.mindFocusedContainer .aboutImages .imgs .ourDescription p {
     font-size: 1.1vw;
     color: white;
     text-shadow: 0 0 3px black;
     filter: drop-shadow(0 0 3px black);
     opacity: 0.9;
-    padding: 2%;
     line-height: 120%;
-    text-align: left;
+    margin: 3% 0 4%;
 }
+.mindFocusedContainer .aboutImages .imgs .ourDescription button {
+     color: white;
+     width: fit-content;
+     border: 2px solid white;
+     background-color: transparent;
+     font-size: 1.1vw;
+     padding: 0.2vw;
+     cursor: pointer;
+ }
 
 .aboutImages .imgs:nth-child(1){transition-delay: 0.0s;}
 .aboutImages .imgs:nth-child(2){transition-delay: 0.05s;}
@@ -223,11 +230,19 @@
         padding: 0;
     }
     .mindFocusedContainer .aboutImages {
+        display: grid;
+        place-items: center;
         margin: 0;
     }
     .mindFocusedContainer .aboutImages .imgs {
-        width: 30vw;
-        height: 30vw;
+        width: 60vw;
+        height: 60vw;
+    }
+    .aboutImages .imgs .ourDescription h5 {
+        font-size: 100%;
+    }
+    .aboutImages .imgs .ourDescription p {
+        font-size: var(--mobileParagraphFontSize);
     }
 
 }

@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden !important;
+}
+
 .contactUsContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -32,7 +36,9 @@
 .contactUsSocial a:hover::after {
     left: 0;
 }
-
+.contactUsSocial .socialMedia {
+    font-size: 5vw;
+}
 .contactUsSocial h3 {
     font-size: var(--sectionHeading2FontSize);
     color: transparent;
@@ -46,11 +52,7 @@
 }
 
 .contactUsSocial hr {
-    margin: 0 -2.5vw 3%;
-}
-
-.contactUsSocial .socialMedia {
-    font-size: 5.5vw;
+    margin: 3% -2.5vw;
 }
 
 .contactUsForm h3 {
@@ -63,7 +65,6 @@
 }
 
 .contactUsForm p {
-    width: 90%;
     font-size: 1.5vw;
     font-weight: 200;
     margin: 0 0 10%;
@@ -136,7 +137,7 @@ form .primaryButton {
     }
 
     .contactUsForm p {
-        padding: 0 10%;
+        padding: 0 5%;
         font-size: var(--mobileParagraphFontSize);
     }
 
@@ -165,7 +166,7 @@ form .primaryButton {
 
     .contactUsSocial h3 {
         text-align: center;
-        font-size: var(--mobileHeadingFontSize);
+        font-size: var(--mobileHeading2FontSize);
         margin: 0;
     }
 

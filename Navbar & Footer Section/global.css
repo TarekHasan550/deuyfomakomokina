@@ -13,9 +13,9 @@
     --sectionRadius: 15px;
     --paragraphFont: "DM Sans";
     --headingFont: "Space Grotesk";
-    --mobileHeadingFontSize: 7.2vw;
-    --mobileHeading2FontSize: 5.3vw;
-    --mobileParagraphFontSize: 3.5vw;
+    --mobileHeadingFontSize: 7.5vw;
+    --mobileHeading2FontSize: 6vw;
+    --mobileParagraphFontSize: 4vw;
 }
 
 * {
@@ -26,7 +26,7 @@
 }
 
 body {
-    padding: 1.2vw 2vw;
+    padding: 1.2vw 2vw 0;
     background-color: var(--bodyColor);
     font-family: var(--paragraphFont);
     color: white;
@@ -37,6 +37,9 @@ body {
 body h1,
 body h2 {
     font-family: "Space Grotesk" !important;
+}
+body a {
+    text-decoration: none;
 }
 
 .primaryButton {
@@ -180,7 +183,7 @@ body h2 {
     background-color: white;
     color: black;
     border-radius: 30px 30px 0 0;
-    margin: -2vw;
+    margin: -1.2vw -2vw;
     padding: 7vw 5vw 4vw;
     font-size: var(--sectionParagraphFontSize);
 }
@@ -250,12 +253,12 @@ body h2 {
     }
 
     .navbar .logo img {
-        width: 3.5vw;
+        width: 4.5vw;
         margin: 0 1vw 0 0;
     }
 
     .navbar .logo a {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     .navbar .menu img {
@@ -310,6 +313,7 @@ body h2 {
 
     .footerContainer {
         grid-template-columns: 1.2fr 1fr 1fr 1.5fr;
+        margin: -1.2vw -2vw;
     }
 
     .footerContainer,
