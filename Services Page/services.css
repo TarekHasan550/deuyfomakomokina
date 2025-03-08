@@ -9,6 +9,10 @@ body h1 {
 body h3 {
     font-size: var(--sectionHeading2FontSize);
     font-weight: 200;
+    transition-delay: 0.2s !important;
+}
+.servicesHeroSection {
+    margin: 15% 0 0;
 }
 
 @media (max-width: 600px) {

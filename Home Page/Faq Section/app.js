@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const plusIcon = faqCard.querySelector("h2 img");
         const answer = faqCard.querySelector("h3");
 
-        plusIcon.addEventListener("click", () => {
+        faqCard.addEventListener("click", () => {
             // Step 1: Check if the clicked FAQ is already open
             const isAlreadyOpen = answer.style.display === "block";
 

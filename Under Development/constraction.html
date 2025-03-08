@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,30 @@
     <link rel="stylesheet" href="/Navbar & Footer Section/global.css">
     <link rel="stylesheet" href="constraction.css">
 </head>
-<body>
-    <h1>This page/feature is underDevelopment</h1>
-    <div class="underDevelopment">
-        <div class="leftSide">
-            <video src="/assets/video/loop fubiweb.webm" autoplay loop muted></video>
-        </div>
-        <div class="rightSide">
-            <p>This page/feature is launch soon, Thanks for your patent.</p>
-            <p>Want To Go Back Home...? <a href="/index.html">  Click Here <img src="/assets/icons/Arrow.svg"></a></p>
-        </div>
-    </div>
 
+<body>
+    <!-- Insert navbar here  -->
+    <div id="navbar"></div>
+
+    <!-- For custom alertBox  -->
+    <div id="alertBox"></div>
+
+    <section class="bgLine">
+        <div class="sideImgs">
+            <img class="hideLeft" src="/assets/icons/gear2.svg"><img class="hideRight" src="/assets/icons/gear.svg"><img
+                class="hideLeft" src="/assets/icons/gear.svg"><img class="hideRight" src="/assets/icons/gear2.svg">
+        </div>
+        <div class="mainMessage">
+            <img class="hideBounce" src="/assets/icons/gear2.svg"></img>
+            <h1>we're almost there..!</h1>
+            <p>We truly appreciate your interest in this section. <br>
+                We are working hard behind the scenes to bring you a seamless and hassle-free experience. <br> <br>
+                <button onclick="window.history.back()">Go Back <img src="/assets/icons/Arrow.svg"></button>
+            </p>
+        </div>
+    </section>
+    <!-- <div id="footer"></div> -->
+    <script src="/Navbar & Footer Section/app.js"></script>
 </body>
+
 </html>

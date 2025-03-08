@@ -83,11 +83,12 @@
     .trust {
         margin: 0 0 35%;
     }
+
     .trust .trustCardContainer h1 {
         font-size: var(--mobileHeadingFontSize);
         text-align: left;
         color: transparent;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 5%, rgba(91, 91, 91, 0.3) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 5%, rgba(91, 91, 91, 0.3) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         margin: 0 0 5%;
@@ -126,6 +127,7 @@
         font-size: 4.5vw;
         line-height: 150%;
         margin: 0 0 0 2%;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .customerReview #trustImg {

@@ -22,9 +22,10 @@
 }
 
 .heroContainer h4 {
-    font-size: var(--sectionHeading2FontSize);
+    font-size: var(--sectionOtherFontSize);
     font-weight: 200;
     margin: 0 0 3%;
+    transition-delay: 0.3s;
 }
 
 .heroContainer button {
@@ -52,7 +53,7 @@
 
 #heroCircle {
     position: absolute;
-    top: -15%;
+    top: -12%;
     width: 90vw;
     height: 70vw;
     border-radius: 50%;

@@ -30,6 +30,7 @@
     position: relative;
     font-size: 2.2vw;
     font-weight: 500;
+    margin: 0 5%;
 }
 
 .faqCard h2 img {
@@ -55,6 +56,7 @@
     margin: 4% 0 0;
     animation: appear 1.5s ease-in-out forwards;
 }
+
 @keyframes heightAppear {
     0% {
         height: 3vw;
@@ -132,10 +134,14 @@
     }
 
     .faqCard h2 {
-        font-size: 2.5vw;
+        font-size: 2.9vw;
     }
 
     .faqCard h2 img {
         left: 96.5%;
+    }
+
+    .faqCard h3 {
+        font-size: 2vw;
     }
 }

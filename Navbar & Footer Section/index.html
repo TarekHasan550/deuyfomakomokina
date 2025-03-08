@@ -29,7 +29,7 @@
                     <a href="/Contact Us Page/contact.html">
                         <p>Contact us</p>
                     </a>
-                    <button class="primaryButton" onclick="location.href='/under Development/constraction.html'">Request a Quote
+                    <button onclick="alertPopUp(event)" class="primaryButton">Request a Quote
                         <div id="btnCircle"></div>
                     </button>
                 </div>
@@ -38,7 +38,7 @@
                     <a href="/About Us Page/about.html"><button>About us</button></a>
                     <a href="/Services Page/services.html"><button>Services</button></a>
                     <a href="/Contact Us Page/contact.html"><button>Contact us</button></a>
-                    <a href="/Under Development/constraction.html"><button class="primaryButton">Request a Quote
+                    <a href="#"><button onclick="alertPopUp(event)" class="primaryButton">Request a Quote
                             <div id="btnCircle"></div>
                         </button></a>
                 </div>
@@ -53,8 +53,7 @@
         <div class="footerContainer">
             <div class="footerGroup1">
                 <button>
-                    <img style="width: 1.6vw;" src="/assets/icons/logoShape.svg"><span
-                        style="font-size: 1.5vw;">FuBiWeb</span>
+                    <img src="/assets/icons/logoShape.svg"><span>FuBiWeb</span>
                 </button>
             </div>
             <div class="footerGroup2">
@@ -72,6 +71,7 @@
                 <p>support@fubiweb.com</p>
             </div>
             <div id="line"></div>
+            <div style="grid-column: 1/5; text-align: center; margin: 1% 0 0;"><p style="font-size: 0.8vw; font-family: var(--paragraphFont);">V1.2.0</p></div>
             <div class="footerGroup5">
                 <a href="https://www.facebook.com/FubiwebOfficial" target="_blank">
                     <img src="/assets/icons/fb.svg" alt="">
@@ -89,6 +89,15 @@
         </div>
     </footer>
     <!-- Footer section finished  -->
+
+    <!-- Alert Box Section  -->
+    <div class="popUpContainer">
+        <div class="popUpContent">
+            <img src="/assets/icons/pluseIcon.svg" alt="">
+            <p></p>
+                <button class="primaryButton">Close</button>
+            </div>
+    </div>
 </body>
 
 </html>

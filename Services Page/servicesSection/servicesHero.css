@@ -1,5 +1,5 @@
 .servicesHeroSection {
-    margin: 10% 0 10%;
+    margin: 10% 0;
 }
 
 .servicesHeroContainer {
@@ -131,7 +131,9 @@
 }
 
 @media (max-width: 600px) {
-
+    .servicesHeroContainer {
+        margin: 20% 0;
+    }
     .servicesHeroSection h1 br {
         display: none;
     }
@@ -140,6 +142,9 @@
     }
     .servicesHeroSection h3 {
         padding: 0 5%;
+    }
+    .serviceCardsSection {
+        margin: 20% 3% 40%;
     }
     .servicesCardAfter {
         border-radius: 10px;

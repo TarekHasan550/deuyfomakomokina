@@ -9,7 +9,7 @@
     font-size: var(--sectionHeadingFontSize);
     font-weight: 500;
     color: transparent;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.4) 5%, rgba(91, 91, 91, 0.3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 5%, rgba(91, 91, 91, 0.3) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     margin: 0 0 5%;
@@ -59,13 +59,13 @@
 }
 
 .whyBackCard:nth-child(1) {
-    transition-delay: .6s;
+    transition-delay: .2s;
 }
 .whyBackCard:nth-child(2) {
     transition-delay: .4s;
 }
 .whyBackCard:nth-child(3) {
-    transition-delay: .2s;
+    transition-delay: .6s;
 }
 /* <-------------------Mobile Device----------------------> */
 @media (max-width:600px) {
