@@ -22,15 +22,18 @@
     <!-- Navbar will be loaded here -->
     <div id="navbar"></div>
 
+    <!-- For custom alertBox  -->
+    <div id="alertBox"></div>
+
     <!-- hero section -->
     <section class="heroContainer">
         <div class="hero">
             <div class="heroContent">
-                <h1 class="hideInside">
+                <h1 class="hideLessDown">
                     WHERE YOUR VISION MEETS <span id="txtColor">OUR</span> <br />
                     <span id="txtColor">CREATIVITY!</span>
                 </h1>
-                <h4 class="hideBlur">
+                <h4 class="hideLessDown">
                     Weaving Web Wonders. Not just for today, <br />but for a digital
                     tomorrow.
                 </h4>
@@ -44,24 +47,23 @@
             </div>
             <div class="heroVideo">
                 <iframe width="100%" height="100%"
-                    src="https://www.youtube-nocookie.com/embed/gUBAkORJxS8?si=xAWL3JXYScBXdPmR"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div id="heroCircle">
-                    <div id="heroGrid"></div>
-                </div>
+                src="https://www.youtube-nocookie.com/embed/gUBAkORJxS8?si=xAWL3JXYScBXdPmR"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div id="heroCircle"> </div>
             </div>
         </div>
-    </section>
-    <!-- hero section finished  -->
+    </div>
+</section>
+<!-- hero section finished  -->
 
-    <!-- Our unique process section  -->
+<!-- Our unique process section  -->
     <section>
         <div class="ourUniqueProcess">
             <h1 class="hideInside">Our Unique Process <img src="/assets/icons/Arrow.svg" alt="" /></h1>
             <div class="cardContainer">
-                <div class="uniqueBackCard hideLeft">
+                <div class="uniqueBackCard hideLessDown">
                     <div class="uniqueProcessCard">
                         <img id="icon1" src="/assets/icons/icon1.svg" alt="" />
                         <h2>
@@ -74,7 +76,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="uniqueBackCard hideLeft">
+                <div class="uniqueBackCard hideLessDown">
                     <div class="uniqueProcessCard">
                         <img src="/assets/icons/icon2.svg" alt="" />
                         <h2>
@@ -87,7 +89,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="uniqueBackCard hideLeft">
+                <div class="uniqueBackCard hideLessDown">
                     <div class="uniqueProcessCard">
                         <img id="icon3" src="/assets/icons/icon3.svg" alt="" />
                         <h2>
@@ -111,7 +113,7 @@
         <div class="whyFuBiWeb">
             <h1 class="hideInside">Why FuBiWeb? <img src="/assets/icons/Arrow.svg" alt="" /></h1>
             <div class="whyCardContainer">
-                <div class="whyBackCard hideRight">
+                <div class="whyBackCard hideLessDown">
                     <div class="whyCard">
                         <img src="/assets/icons/icon4.svg" alt="" />
                         <h2>
@@ -125,7 +127,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="whyBackCard hideRight">
+                <div class="whyBackCard hideLessDown">
                     <div class="whyCard">
                         <img id="icon5" src="/assets/icons/icon5.svg" alt="" />
                         <h2>
@@ -139,7 +141,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="whyBackCard hideRight">
+                <div class="whyBackCard hideLessDown">
                     <div class="whyCard">
                         <img id="icon6" src="/assets/icons/icon6.svg" alt="" />
                         <h2>
@@ -159,24 +161,25 @@
     <!-- Why FuBiWeb section finished -->
 
     <!-- Ready to transform section  -->
-    <div class="transformSection hideBlur">
+    <div class="transformSection hideLessDown">
         <div class="transformContainer">
-            <h1>
+            <h1 class="hideLessDown">
                 Ready to Transform <br />
                 Your Vision?
             </h1>
-            <h3>
+            <h3 class="hideLessDown">
                 Don’t just dream it, achieve it with Fubiweb. Click the button below
                 to get started on your journey to a stunning, high-performing website.
             </h3>
-            <button class="primaryButton" onclick="location.href='/under Development/constraction.html'">
-                Request a Quote
-                <div id="btnCircle"></div>
-            </button>
-            <button class="primaryButton" id="secondaryButton"
-                onclick="location.href='/under Development/constraction.html'">
-                Request a Quote
-            </button>
+            <div>
+                <button onclick="alertPopUp(event)" class="primaryButton hideLessDown">
+                    Request a Quote
+                    <div id="btnCircle"></div>
+                </button>
+                <button onclick="alertPopUp(event)" class="primaryButton hideLessDown" id="secondaryButton">
+                    Request a Quote
+                </button>
+            </div>
         </div>
         <div class="transformCircle"></div>
         <div class="transformCircle2"></div>
@@ -187,7 +190,7 @@
     <section class="trust">
         <div class="trustCardContainer">
             <h1 class="hideInside">Trusted By..</h1>
-            <div class="trustCard hideLeft">
+            <div class="trustCard hideSmallDown">
                 <div class="trustCardAfter">
                     <div class="photoTxt">
                         <img src="/assets/images/kuddus.svg" alt="" />
@@ -208,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="trustCard hideRight">
+        <div class="trustCard hideSmallDown">
             <div class="trustCardAfter">
                 <div class="photoTxt">
                     <img src="/assets/images/kuddus.svg" alt="" />
@@ -227,7 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class="trustCard hideLeft">
+        <div class="trustCard hideSmallDown">
             <div class="trustCardAfter">
                 <div class="photoTxt">
                     <img src="/assets/images/kuddus.svg" alt="" />
@@ -249,17 +252,17 @@
 
     <!-- Our masterpiece section  -->
     <section class="masterPiece">
-        <h1 class="hideInside">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
-        <h1 id="h" class="hideInside">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
+        <h1 id="h" class="hideLessDown">Our M</h1>
+        <h1 class="hideLessDown">Our Masterpieces <img src="/assets/icons/Arrow.svg" alt=""></h1>
         <div class="masterCardContainer">
-            <div class="masterCard hideLeft" id="uniqueMasterCard1">
+            <div class="masterCard hideLessDown" id="uniqueMasterCard1">
                 <img src="/assets/images/Rectangle 105.svg" alt="" />
                 <h2>Earned Trust</h2>
                 <p>Show your expertise in a way that genuinely builds trust, making it easier for your prospects to
                     become loyal clients.
                 </p>
             </div>
-            <div class="masterCard hideLeftConic" id="uniqueMasterCard2">
+            <div class="masterCard hideLessDown" id="uniqueMasterCard2">
                 <img src="/assets/images/Rectangle 106.svg" alt="" />
                 <h2>Authentic Branding</h2>
                 <p>
@@ -267,14 +270,14 @@
                     audience.
                 </p>
             </div>
-            <div class="masterCard hideRightConic" id="uniqueMasterCard3">
+            <div class="masterCard hideLessDown" id="uniqueMasterCard3">
                 <img src="/assets/images/Rectangle 107.svg" alt="" />
                 <h2>Lasting Growth</h2>
                 <p>
                     Foster meaningful connections that earn trust and drive sustainable business success.
                 </p>
             </div>
-            <div class="masterCard hideRight" id="uniqueMasterCard4">
+            <div class="masterCard hideLessDown" id="uniqueMasterCard4">
                 <img src="/assets/images/Rectangle 108.svg" alt="" />
                 <h2>Meaningful Traffic</h2>
                 <p>
@@ -293,30 +296,30 @@
     <!-- Our expert section  -->
     <section class="experts">
         <h1 class="hideInside">Meet The Experts</h1>
-        <h5 class="hideBlur">
+        <h5 class="hideLessDown">
             Our team of innovators, strategists, and visionaries is here to guide
             you toward success. Together, we make the extraordinary happen
         </h5>
         <div class="expertsCardContainer">
-            <div class="expertsCard hideLeft" id="expertRahat">
+            <div class="expertsCard hideLessDown" id="expertRahat">
                 <h3>Rashedul Rahat</h3>
                 <h4>
                     Founder and CEO. Rashedul believes every business has a unique story
                     worth sharing-and he ensures it reaches the right audience with
                     impact and authenticity.
                 </h4>
-                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
+                <button onclick="alertPopUp(event)">SEE HIS PROMISE TO YOU</button>
             </div>
-            <div class="expertsCard hideLeft" id="expertArgho">
+            <div class="expertsCard hideLessDown" id="expertArgho">
                 <h3>Argho Rozario</h3>
                 <h4>
                     Senior Developer. Argho believes every line of code is an
                     opportunity to create meaningful digital experiences that inspire
                     trust and drive success.
                 </h4>
-                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
+                <button onclick="alertPopUp(event)">SEE HIS PROMISE TO YOU</button>
             </div>
-            <div class="expertsCard hideLeft" id="expertRehan">
+            <div class="expertsCard hideLessDown" id="expertRehan">
                 <h3>Raiyat Rehan</h3>
                 <h4>
                     Content Creator. Raiyat believes every piece of content is a story
@@ -324,15 +327,15 @@
                     narratives that resonate deeply with audiences, building connections
                     that last.
                 </h4>
-                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
+                <button onclick="alertPopUp(event)">SEE HIS PROMISE TO YOU</button>
             </div>
-            <div class="expertsCard" id="expertTarek">
+            <div class="expertsCard hideLessDown" id="expertTarek">
                 <h3>Tarek Hasan</h3>
                 <h4>
                     Programmer | The Nerd. Believes every line of code is a chance to create simple, efficient
                     systems that solve problems and make things more easier.
                 </h4>
-                <button onclick="location.href='/under Development/constraction.html'">SEE HIS PROMISE TO YOU</button>
+                <button onclick="alertPopUp(event)">SEE HIS PROMISE TO YOU</button>
             </div>
         </div>
     </section>
@@ -340,7 +343,7 @@
 
     <!-- Faq section  -->
     <section class="faq">
-        <h1 class="hideInside">
+        <h1 class="hideLessDown">
             Got Questions? <br />
             We’ve Got Answers!
         </h1>

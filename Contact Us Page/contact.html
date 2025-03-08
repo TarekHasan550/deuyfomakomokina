@@ -14,16 +14,20 @@
     <!-- Navbar will be loaded here -->
     <div id="navbar"></div>
 
+    <!-- For custom alertBox  -->
+    <div id="alertBox"></div>
 
     <section class="contactUsContent">
         <section class="contactUsSocial">
-            <h3>connect with us directly <img src="/assets/icons/Arrow.svg" alt=""></h3>
+            <h3>Connect with us directly <img src="/assets/icons/Arrow.svg" alt=""></h3>
             <hr>
-            <div class="socialMedia"><a href="https://www.linkedin.com/company/fubiweb/" target="_blank">LINKEDIN</a></div>
+            <div class="socialMedia"><a href="https://www.linkedin.com/company/fubiweb/" target="_blank">LINKEDIN</a>
+            </div>
             <hr>
             <div class="socialMedia"><a href="https://www.instagram.com/fubiweb/" target="_blank">INSTAGRAM</a></div>
             <hr>
-            <div class="socialMedia"><a href="https://www.facebook.com/FubiwebOfficial" target="_blank">FACEBOOK</a></div>
+            <div class="socialMedia"><a href="https://www.facebook.com/FubiwebOfficial" target="_blank">FACEBOOK</a>
+            </div>
             <hr>
             <div class="socialMedia"><a href="https://x.com/Fubiweb" target="_blank">TWITTER</a></div>
             <hr>
@@ -44,9 +48,9 @@
                     <input type="email" id="email">
 
                     <label for="phoneNumber">Phone:</label>
-                    <input type="number" Number" id="phoneNumber">
+                    <input type="number" id="phoneNumber">
 
-                    <button class="primaryButton" type="submit">Submit</button>
+                    <button onclick="alertPopUp(event)" class="primaryButton" type="submit" id="formSubmit">Submit</button>
                 </form>
             </section>
         </section>

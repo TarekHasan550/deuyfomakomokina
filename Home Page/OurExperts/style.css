@@ -49,6 +49,10 @@
     display: block;
 }
 
+.expertsCard:focus>* {
+    display: block;
+}
+
 .expertsCard h3,
 .expertsCard h4,
 .expertsCard button {
@@ -121,7 +125,7 @@
         font-weight: 500;
         text-align: left;
         color: transparent;
-        background: linear-gradient(to right, rgba(255, 255, 255), rgba(91, 91, 91, 0.8) 15%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 5%, rgba(91, 91, 91, 0.3) 100%);
         background-clip: text;
         -webkit-background-clip: text;
     }
@@ -147,7 +151,26 @@
         padding: 5%;
         filter: grayscale(0);
         box-sizing: border-box;
+        transition: all 0.5s ease;
     }
+
+    .expertsCard:hover {
+        box-shadow: inset 0 0 20vw rgba(0, 0, 0, 1);
+    }
+
+    .expertsCard:hover::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+        opacity: 0.5;
+        z-index: -3;
+        transition: all 0.5s ease;
+    }
+
     #expertRahat,
     #expertArgho,
     #expertRehan,
@@ -168,13 +191,14 @@
     .expertsCard h3,
     .expertsCard h4,
     .expertsCard button {
-        display: block;
         font-size: 2vw;
         width: fit-content;
     }
+
     .expertsCard h3 {
         font-size: var(--mobileParagraphFontSize);
     }
+
     .expertsCard h4 {
         font-size: 3vw;
         line-height: 100%;

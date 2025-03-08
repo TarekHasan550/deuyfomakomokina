@@ -1,3 +1,12 @@
+/* Animation Delay  */
+*>h3 {
+    transition-delay: 0.2s !important;
+}
+
+*>button {
+    transition-delay: 0.4s !important;
+}
+
 /* About us hero section */
 .aboutHeroSection {
     margin: 15% 0;
@@ -24,6 +33,7 @@
 .completeProjectContainer .projectCounter p {
     font-size: 1vw;
 }
+
 .completeProjectContainer hr:nth-child(8) {
     display: none;
 }
@@ -52,7 +62,7 @@
 
 .mindFocusedContainer h3 {
     margin: 3% 0 0;
-    
+
 }
 
 .mindFocusedContainer .aboutImages {
@@ -71,51 +81,85 @@
     flex-direction: column;
     justify-content: end;
 }
+
+.aboutImages .imgs:hover {
+    box-shadow: inset 0 0 20vw rgba(0, 0, 0, 1);
+}
+
 .ourDescription {
     display: none;
+    transition: all 0.3s ease;
+}
+
+.ourDescription::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: -3;
     transition: all 0.5s ease;
 }
+
 .aboutImages .imgs:hover .ourDescription {
     display: block;
     text-align: left;
     padding: 3%;
 }
+
 .mindFocusedContainer .aboutImages .imgs .ourDescription h5 {
     font-size: 1.2vw;
     color: var(--brandPrimaryColor);
-    text-shadow: 0 0 3px black;
-    filter: drop-shadow(0 0 3px black);
+    /* text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); */
 }
+
 .mindFocusedContainer .aboutImages .imgs .ourDescription p {
     font-size: 1.1vw;
     color: white;
-    text-shadow: 0 0 3px black;
-    filter: drop-shadow(0 0 3px black);
-    opacity: 0.9;
+    /* text-shadow: 0 0 3px rgba(255, 255, 255, 0.5); */
     line-height: 120%;
     margin: 3% 0 4%;
 }
-.mindFocusedContainer .aboutImages .imgs .ourDescription button {
-     color: white;
-     width: fit-content;
-     border: 2px solid white;
-     background-color: transparent;
-     font-size: 1.1vw;
-     padding: 0.2vw;
-     cursor: pointer;
- }
 
-.aboutImages .imgs:nth-child(1){transition-delay: 0.0s;}
-.aboutImages .imgs:nth-child(2){transition-delay: 0.05s;}
-.aboutImages .imgs:nth-child(3){transition-delay: 0.1s;}
-.aboutImages .imgs:nth-child(4){transition-delay: 0.15s;}
-.aboutImages .imgs:nth-child(5){transition-delay: 0.2s;}
+.mindFocusedContainer .aboutImages .imgs .ourDescription button {
+    color: white;
+    width: fit-content;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: 1.1vw;
+    padding: 0.2vw;
+    cursor: pointer;
+}
+
+.aboutImages .imgs:nth-child(1) {
+    transition-delay: 0.0s;
+}
+
+.aboutImages .imgs:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.aboutImages .imgs:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+.aboutImages .imgs:nth-child(4) {
+    transition-delay: 0.2s;
+}
+
+.aboutImages .imgs:nth-child(5) {
+    transition-delay: 0.25s;
+}
 
 #aboutRahat {
-    background: url(/assets/images/rahat.webp);
+    background: url(/assets/images/rahat.webp), black;
     background-position: 40% 20%;
     background-size: 110%;
     background-repeat: no-repeat;
+    background-blend-mode: normal;
 }
 
 #aboutTarek {
@@ -171,7 +215,7 @@
 
 .solveProblemContainer h3 {
     margin: 3% 0;
-    
+
 }
 
 /* About us your vision section */
@@ -185,10 +229,15 @@
 
 .yourVisionContainer h3 {
     margin: 3% 0;
-    
+
 }
 
+/* --------------------------Mobile device---------------------------- */
 @media (max-width: 600px) {
+    .aboutHeroSection {
+        margin: 0 0 40%;
+    }
+
     .forMobileView {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -203,46 +252,88 @@
         flex-direction: column;
         margin: 0 0 0 10%;
     }
+
     .completeProjectContainer hr {
         margin: 10% 0 5%;
     }
+
     .completeProjectContainer .projectCounter {
         margin: 0 0 0 20%;
     }
+
     .completeProjectContainer .projectCounter p {
         font-size: 2vw;
     }
+
+    .aboutOurStrength {
+        margin: 0 0 60%;
+    }
+
     .ourStrength {
         text-align: left;
         position: relative;
         top: 60%;
     }
+
     .ourStrength h3 {
         font-size: var(--mobileParagraphFontSize);
         margin: 5% 0 0 -60%;
         padding: 0;
         text-align: center;
     }
+
+    .aboutMindFocused {
+        margin: 0 0 40%;
+    }
+
     .aboutMindFocused .mindFocusedContainer {
         margin: 40% 1% 0;
     }
+
     .mindFocusedContainer h3 {
         padding: 0;
-    }
-    .mindFocusedContainer .aboutImages {
-        display: grid;
-        place-items: center;
-        margin: 0;
-    }
-    .mindFocusedContainer .aboutImages .imgs {
-        width: 60vw;
-        height: 60vw;
-    }
-    .aboutImages .imgs .ourDescription h5 {
-        font-size: 100%;
-    }
-    .aboutImages .imgs .ourDescription p {
-        font-size: var(--mobileParagraphFontSize);
+        margin: 5% 0 10%;
     }
 
+    .mindFocusedContainer .aboutImages {
+        display: flex;
+        place-items: center;
+        margin: 0;
+        gap: 5%;
+    }
+
+    .mindFocusedContainer .aboutImages .imgs {
+        width: 40vw;
+        height: 40vw;
+        margin: 0 0 5%;
+    }
+
+    .mindFocusedContainer .aboutImages .imgs .ourDescription {
+        padding: 5%;
+    }
+
+    .mindFocusedContainer .aboutImages .imgs .ourDescription h5 {
+        font-size: 3vw;
+        margin: 0 0 3%;
+    }
+
+        .mindFocusedContainer .aboutImages .imgs .ourDescription p {
+        font-size: 2.8vw;
+        margin: 0 0 4%;
+        line-height: 110%;
+    }
+
+    .mindFocusedContainer .aboutImages .imgs .ourDescription button {
+        font-size: 2vw;
+        padding: .5vw;
+        border: 1px solid white;
+    }
+
+    .aboutSolveProblem {
+        margin: 0 0 40%;
+    }
+
+    .aboutYourVision {
+        margin: 0 0 40%;
+    }
 }
